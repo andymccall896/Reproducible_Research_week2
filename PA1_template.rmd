@@ -143,6 +143,7 @@ replace_activity$week <- weekdays(replace_activity$date)
 
 
 2. MAke a panel plot containing a time series plot (i.e. type = "l") of the 5 minute interval (-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). see the readme file in the github repository to see an example of what this plot should look like using simulated data.
+
 ```{r}
 timesseries_replace_activity <- replace_activity %>%
 group_by(date,week,interval) %>%
